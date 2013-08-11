@@ -10,6 +10,8 @@ gem 'omniauth-twitter'
 
 gem 'inherited_resources'
 gem 'formtastic'
+# gem 'simple_form'
+
 # gem 'kaminari'
 gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 # https://www.ruby-toolbox.com/categories/Configuration_Management
@@ -23,6 +25,7 @@ gem 'cancan'
 gem 'draper'
 
 gem 'haml'
+gem 'slim'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
