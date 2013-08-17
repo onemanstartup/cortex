@@ -20,3 +20,8 @@ gem 'zonebie'
 ` Date.current ` isntead of ` Date.today `
 ` Time.zone.now ` instead of ` Time.now `
 
+# RSS Feeds
+Uses ActionView::Helpers::AtomFeedHelper
+`index.atom.builder`
+`content_for :head, auto_discovery_link_tag(:atom, some_url(form: 'atom'))`
+We :can password protect rss feed
