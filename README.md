@@ -25,3 +25,18 @@ Uses ActionView::Helpers::AtomFeedHelper
 `index.atom.builder`
 `content_for :head, auto_discovery_link_tag(:atom, some_url(form: 'atom'))`
 We :can password protect rss feed
+
+# Exception Notification
+`gem 'exception_notification'` => `http://smartinez87.github.io/exception_notification/`
+ignore default exceptions
+`
+App::Application.config.middleware.use ExceptionNotification::Rack,
+  :ignore_exceptions => ExceptionNotifier.ignored_exceptions,
+  :ignore_crawlers => %w{Googlebot bingbot},
+ # :ignore_if => ->(env, exception) { exception.message =~ /^Couldn't find Page with ID=/ },
+  :email => {
+    :email_prefix => "[Whatever] ",
+    :sender_address => %{"notifier" <notifier@example.com>},
+    :exception_recipients => %w{exceptions@example.com}
+  }
+`
