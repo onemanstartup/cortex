@@ -40,3 +40,13 @@ App::Application.config.middleware.use ExceptionNotification::Rack,
     :exception_recipients => %w{exceptions@example.com}
   }
 `
+
+
+# Js
+Libraries that don't expecting modification is going to Jsfile under vendor group, if you want change library you put it in lib group.
+Bower-rails api
+```
+rake bower:dsl:install #install js components
+rake bower:dsl:update  #update js components
+```
+
