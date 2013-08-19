@@ -18,5 +18,7 @@
 # Ignore application configuration
 /config/application.yml
 
-# Ignore /vendor/assets/js/components/
-/vendor/assets/js/components
+# Ignore bower files
+/vendor/assets/js/**/*
+/vendor/assets/dev_js
+vendor/assets/js/bower.json

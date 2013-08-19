@@ -48,5 +48,10 @@ Bower-rails api
 ```
 rake bower:dsl:install #install js components
 rake bower:dsl:update  #update js components
+rake bower:dsl:update #update js components
+rake bower:dsl:update:prune #update components and uninstall extraneous packages
 ```
+## Dev JS Libraries
+github.com/philipwalton/html-inspector
+`HTMLInspector.inspect()`
 

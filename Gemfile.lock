@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/42dev/bower-rails.git
+  revision: 7196619541c10648dceeb0e3c6c1d95da96e815c
+  specs:
+    bower-rails (0.4.0)
+
+GIT
   remote: git://github.com/FriendlyId/friendly_id.git
   revision: 04dd758fa68d4bcdab5f3a1c83dac53195c03281
   branch: master
@@ -46,7 +52,6 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bluff (0.1.0)
-    bower-rails (0.4.0)
     brakeman (2.0.0)
       erubis (~> 2.6)
       fastercsv (~> 1.5)
@@ -372,7 +377,7 @@ DEPENDENCIES
   awesome_print
   better_errors
   binding_of_caller
-  bower-rails (~> 0.4.0)
+  bower-rails!
   brakeman
   cancan
   coffee-rails (~> 4.0.0)
