@@ -96,7 +96,7 @@ group :test do
 end
 
 group :metrics do
-  gem 'metric_fu'
+  gem 'metric_fu', require: false
 end
 
 group :development do
@@ -116,3 +116,7 @@ gem 'turnout'
 
 # Recommendation Engines
 # https://www.ruby-toolbox.com/categories/Recommendation_Engines
+
+group :seo do
+#  gem 'sitemap_generator'
+end

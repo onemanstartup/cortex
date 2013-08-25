@@ -55,3 +55,9 @@ rake bower:dsl:update:prune #update components and uninstall extraneous packages
 github.com/philipwalton/html-inspector
 `HTMLInspector.inspect()`
 
+# SEO
+`gem 'sitemap_generator'`
+```
+SitemapGenerator::Sitemap.search_engines.merge!(:yandex => 'http://webmaster.yandex.ru/wmconsole/sitemap_list.xml?host=%s')
+```
+
