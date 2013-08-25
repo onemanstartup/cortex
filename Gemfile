@@ -55,11 +55,14 @@ gem 'fnordmetric'
 
 # Database Gems
 # gem 'foreigner'
+# gem 'immigrant'
 # gem 'pg'
 # gem 'rails3_pg_deferred_constraints'
 # gem 'database_cleaner'
 # gem "bullet", :group => "development"
-#
+# gem "schema_plus"
+# gem "schema_validations"
+# gem "schema_associations"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -101,6 +104,12 @@ end
 
 group :development do
   gem 'brakeman', :require => false
+  # Annotate models for active record
+  gem 'annotate'
+  # Helps find what need to be indexed
+  gem 'lol_dba'
+  # Mutes assets logs
+  gem 'quiet_assets'
 end
 
 gem 'turnout'
@@ -120,3 +129,9 @@ gem 'turnout'
 group :seo do
 #  gem 'sitemap_generator'
 end
+
+# Search
+# gem "ransack"
+
+# Scopes
+# gem 'searchlogic'
