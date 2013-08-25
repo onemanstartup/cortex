@@ -61,3 +61,9 @@ github.com/philipwalton/html-inspector
 SitemapGenerator::Sitemap.search_engines.merge!(:yandex => 'http://webmaster.yandex.ru/wmconsole/sitemap_list.xml?host=%s')
 ```
 
+# Enums
+If you need enums check this out https://gist.github.com/onemanstartup/6334632Shortly
+`gem 'enumerate_it'` - if legacy db with enum values in strings and integers
+`gem 'classy_enum'` - if you want logic inside enums. It is difficult them which i don't fully understand and tried.
+`gem 'enumerize'` - every other cases
+
