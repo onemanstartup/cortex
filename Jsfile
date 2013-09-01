@@ -11,7 +11,7 @@ group :vendor, assets_path: "assets/dev_js" do
 end
 
 # Puts files under ./lib/assets/javascript/components
-group :lib do
-end
-
+# group :lib do
+# end
+# 
 

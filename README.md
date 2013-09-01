@@ -1,3 +1,4 @@
+# [Style Guides](https://github.com/styleguide/)
 # TimeZones
 ## Person (User Model)
 `validates_inclusion_of :time_zone, in: ActiveSupport::TimeZone.zones_map(&:name)`
