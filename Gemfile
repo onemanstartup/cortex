@@ -23,7 +23,7 @@ gem 'figaro'
 # gem 'settingslogic'
 
 ###################
-#  Authorization  #
+#  authorization  #
 ###################
 gem 'cancan'
 # https://github.com/ryanb/cancan/wiki/Role-Based-Authorization
@@ -277,7 +277,7 @@ end
 #  Security  #
 ##############
 group :development do
-#  gem 'brakeman', :require => false
+  gem 'brakeman', :require => false
 end
 # gem "recaptcha", :require => "recaptcha/rails"
 

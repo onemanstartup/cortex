@@ -38,7 +38,6 @@ GEM
       multi_json (~> 1.3)
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
-    addressable (2.3.5)
     arel (4.0.0)
     arrayfields (4.9.0)
     ast (1.1.0)
@@ -52,6 +51,17 @@ GEM
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bluff (0.1.0)
+    brakeman (2.0.0)
+      erubis (~> 2.6)
+      fastercsv (~> 1.5)
+      haml (>= 3.0, < 5.0)
+      highline (~> 1.6.19)
+      multi_json (~> 1.2)
+      ruby2ruby (~> 2.0.5)
+      ruby_parser (~> 3.1.1)
+      sass (~> 3.0)
+      slim (~> 1.3.6)
+      terminal-table (~> 1.4)
     builder (3.1.4)
     cancan (1.6.10)
     cane (2.5.2)
@@ -78,7 +88,6 @@ GEM
     colorize (0.5.8)
     columnize (0.3.6)
     coolline (0.4.2)
-    daemons (1.1.9)
     debug_inspector (0.0.2)
     debugger (1.6.1)
       columnize (>= 0.3.1)
@@ -95,17 +104,12 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       request_store (~> 1.0.3)
-    em-hiredis (0.2.1)
-      hiredis (~> 0.4.0)
-    em-websocket (0.3.8)
-      addressable (>= 2.1.1)
-      eventmachine (>= 0.12.9)
     erubis (2.7.0)
-    eventmachine (1.0.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
+    fastercsv (1.5.5)
     fattr (2.2.1)
     figaro (0.7.0)
       bundler (~> 1.0)
@@ -116,20 +120,6 @@ GEM
     flog (3.2.3)
       ruby_parser (~> 3.1, > 3.1.0)
       sexp_processor (~> 4.0)
-    fnordmetric (1.2.9)
-      activesupport
-      em-hiredis (>= 0.1.1)
-      eventmachine
-      haml
-      i18n
-      json
-      rack
-      rack-test
-      redis (>= 2.2.2)
-      sinatra (>= 1.2.6)
-      thin (>= 1.3.0)
-      websocket-rack (= 0.4.0)
-      yajl-ruby
     formtastic (2.2.1)
       actionpack (>= 3.0)
     haml (4.0.2)
@@ -143,9 +133,9 @@ GEM
       actionpack (>= 3.2, < 5)
       activesupport (>= 3.2, < 5)
     hashie (2.0.5)
+    highline (1.6.19)
     hike (1.2.3)
     hirb (0.7.1)
-    hiredis (0.4.5)
     httpauth (0.2.0)
     i18n (0.6.4)
     inherited_resources (1.4.1)
@@ -195,12 +185,12 @@ GEM
     metric_fu-roodi (2.2.2)
       ruby_parser
     mime-types (1.23)
+    mini_portile (0.5.1)
     minitest (4.7.5)
-    minitest-rails (0.9.2)
-      minitest (~> 4.7)
-      rails (>= 3.0)
     multi_json (1.7.8)
     multipart-post (1.2.0)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
     oauth (0.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
@@ -250,8 +240,6 @@ GEM
     quiet_assets (1.0.2)
       railties (>= 3.1, < 5.0)
     rack (1.5.2)
-    rack-protection (1.5.0)
-      rack
     rack-test (0.6.2)
       rack (>= 1.0)
     rails (4.0.0)
@@ -280,7 +268,6 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     redcard (1.1.0)
-    redis (3.0.4)
     reek (1.3.2)
       ruby2ruby (~> 2.0.2)
       ruby_parser (~> 3.1.1)
@@ -310,10 +297,6 @@ GEM
       json (>= 1.1.3)
       rdoc (~> 3.10)
     sexp_processor (4.2.1)
-    sinatra (1.4.3)
-      rack (~> 1.4)
-      rack-protection (~> 1.4)
-      tilt (~> 1.3, >= 1.3.4)
     slim (1.3.9)
       temple (~> 0.6.3)
       tilt (~> 1.3, >= 1.3.3)
@@ -328,10 +311,7 @@ GEM
       activesupport (>= 3.0)
       sprockets (~> 2.8)
     temple (0.6.6)
-    thin (1.5.1)
-      daemons (>= 1.0.9)
-      eventmachine (>= 0.12.6)
-      rack (>= 1.0.0)
+    terminal-table (1.4.5)
     thor (0.18.1)
     thread_safe (0.1.2)
       atomic
@@ -339,22 +319,19 @@ GEM
     treetop (1.4.14)
       polyglot
       polyglot (>= 0.3.1)
+    turnout (0.2.3)
+      nokogiri (~> 1.3)
+      rack
     tzinfo (0.3.37)
     uglifier (2.1.2)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     warden (1.2.3)
       rack (>= 1.0)
-    websocket-rack (0.4.0)
-      em-websocket (~> 0.3.6)
-      eventmachine (~> 1.0.0.beta.4)
-      rack
-      thin
     xml-simple (1.1.2)
     xray-rails (0.1.6)
       coffee-rails
       rails (>= 3.1.0)
-    yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
@@ -364,13 +341,13 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bower-rails!
+  brakeman
   cancan
   coffee-rails (~> 4.0.0)
   debugger
   devise
   draper
   figaro
-  fnordmetric
   formtastic
   friendly_id!
   haml
@@ -380,7 +357,6 @@ DEPENDENCIES
   letters
   lol_dba
   metric_fu
-  minitest-rails
   omniauth-facebook
   omniauth-twitter
   omniauth-vkontakte
@@ -395,5 +371,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   slim
+  turnout
   uglifier (>= 1.3.0)
   xray-rails
