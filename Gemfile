@@ -10,9 +10,9 @@ gem 'rails', '4.0.0'
 #  Authentication  #
 ####################
 gem 'devise'
-gem 'omniauth-vkontakte'
-gem 'omniauth-facebook'
-gem 'omniauth-twitter'
+# gem 'omniauth-vkontakte'
+# gem 'omniauth-facebook'
+# gem 'omniauth-twitter'
 
 
 gem 'inherited_resources'
@@ -34,8 +34,7 @@ gem 'cancan'
 #  View related gems  #
 #######################
 gem 'draper'
-gem 'haml'
-gem 'slim'
+gem 'slim-rails'
 
 #gem 'simple-navigation'
 #gem 'breadcrumbs_on_rails'
@@ -56,7 +55,8 @@ gem 'formtastic'
 #############################
 #  Stylesheet related gems  #
 #############################
-gem 'sass-rails', '~> 4.0.0'
+# gem 'sass-rails', '~> 4.0.0'
+gem 'stylus'
 # gem 'compass-rails', :group => "assets"
 # gem 'bootstrap-sass', :group => "assets"
 # gem 'bourbon'
@@ -178,18 +178,21 @@ end
 
 # Debugging
 group :development, :test do
-  gem 'haml-rails'
-  gem 'debugger'
   gem 'xray-rails'
-  gem 'awesome_print'
-  gem 'pry-rails'
-  gem 'pry-nav'
-  gem 'pry-coolline'
-  gem 'pry-remote'
-  gem 'rubocop'
   gem 'letters'
 end
 
+group :debug do
+  gem 'pry-byebug'
+  gem 'byebug'
+  gem 'pry-rails'
+  gem 'pry-coolline'
+  gem 'pry-remote'
+end
+
+group :console do
+  gem 'awesome_print'
+end
 #######################################################################
 #                               Testing                               #
 #######################################################################
@@ -215,6 +218,7 @@ end
 
 group :metrics do
   gem 'metric_fu', require: false
+  gem 'rubocop', require: false
 end
 
 group :development do
@@ -276,7 +280,7 @@ end
 ##############
 #  Security  #
 ##############
-group :development do
+group :metrics do
   gem 'brakeman', :require => false
 end
 # gem "recaptcha", :require => "recaptcha/rails"
