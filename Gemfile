@@ -10,13 +10,16 @@ gem 'rails', '4.0.0'
 #  Authentication  #
 ####################
 gem 'devise'
-# gem 'omniauth-vkontakte'
-# gem 'omniauth-facebook'
-# gem 'omniauth-twitter'
+gem 'omniauth-vkontakte'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
 
 
+group :production do
+  gem 'exception_notification'
+end
 gem 'inherited_resources'
-# gem 'kaminari'
+gem 'kaminari'
 gem 'friendly_id', github: 'FriendlyId/friendly_id', branch: 'master' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 # https://www.ruby-toolbox.com/categories/Configuration_Management
 gem 'figaro'
@@ -27,8 +30,8 @@ gem 'figaro'
 ###################
 gem 'cancan'
 # https://github.com/ryanb/cancan/wiki/Role-Based-Authorization
-# gem 'rolify'
-# gem 'the_role'
+gem 'rolify'
+gem 'the_role'
 
 #######################
 #  View related gems  #
@@ -36,21 +39,21 @@ gem 'cancan'
 gem 'draper'
 gem 'slim-rails'
 
-#gem 'simple-navigation'
-#gem 'breadcrumbs_on_rails'
-#gem 'active_link_to'
-gem 'formtastic'
+gem 'simple-navigation'
+gem 'breadcrumbs_on_rails'
+gem 'active_link_to'
+gem 'formtastic', github: 'justinfrench/formtastic'
 # gem 'simple_form' # integrates bootstrap & zurb
 # Nested forms
-# gem 'cocoon' # can simple_form+bootstrap & formtastic & rails forms
+gem 'cocoon' # can simple_form+bootstrap & formtastic & rails forms
 # Step-by-step wizards
-# gem 'wicked'
+gem 'wicked'
 # Code highlight
-# gem 'rouge'
+gem 'rouge'
 # Tables
 # gem 'wice_grid' vs gem 'datagrid'
 # Edit in place
-# gem 'best_in_place'
+gem 'best_in_place'
 # Microformats made by hand
 #############################
 #  Stylesheet related gems  #
@@ -60,9 +63,11 @@ gem 'stylus'
 # gem 'compass-rails', :group => "assets"
 # gem 'bootstrap-sass', :group => "assets"
 # gem 'bourbon'
-# gem 'deadweight'
+group :test do
+  gem 'deadweight', :require => 'deadweight/hijack/rails'
+end
 group :development do
-# gem 'kss-rails'
+gem 'kss-rails'
 end
 
 # Use Uglifier as compressor for JavaScript assets
@@ -74,10 +79,10 @@ gem "bower-rails", github: '42dev/bower-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# gem 'wiselinks'
-# gem 'mousetrap-rails'
-# gem 'paloma'
-# gem 'gon'
+gem 'wiselinks'
+gem 'mousetrap-rails'
+gem 'paloma'
+gem 'gon'
 group :development, :test do
 # gem 'jasmine'
 end
@@ -85,8 +90,8 @@ end
 #  Russian specific  #
 ######################
 gem 'russian'
-#gem 'r18n'
-#gem 'yandex_inflect'
+# gem 'r18n'
+gem 'yandex_inflect'
 # i18n-js
 # globalize3 || has_translations
 # For money = phraseapp, localeapp
@@ -95,30 +100,30 @@ gem 'russian'
 ##################
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
-# gem 'grape' # https://github.com/intridea/grape
-# gem 'rabl'  # https://github.com/nesquena/rabl
+gem 'grape' # https://github.com/intridea/grape
+gem 'rabl'  # https://github.com/nesquena/rabl
 # gem 'active_model_serializers' # https://github.com/rails-api/active_model_serializers
 # versionist
 # versioncake
 
-# gem 'oj'
+gem 'oj'
 
 #######################################################################
 #                               Mailing                               #
 #######################################################################
-# gem 'premailer'
+gem 'premailer'
 # resque_mailer
 # Incoming mail - mailman || griddler
 #######################################################################
 #                           Time Recurrence                           #
 #######################################################################
-# gem 'ice_cube'
-# gem 'recurring_select'
+gem 'ice_cube'
+gem 'recurring_select'
 
 #######################################################################
 #                              Concerns                               #
 #######################################################################
-# gem 'acts-as-taggable-on'
+gem 'acts-as-taggable-on'
 # Comments
 # juvia || acts_as_commentable_with_threading || acts_as_commentable
 # Versioning
@@ -126,13 +131,13 @@ gem 'jbuilder', '~> 1.2'
 # Soft Deletion
 # destroyed_at || permanent_records || acts_as_paranoid
 # Nesting
-# gem 'awesome_nested_set'
+gem 'awesome_nested_set'
 #######################################################################
 #                         App Instrumentation                         #
 #######################################################################
 # gem 'fnordmetric'
 # gem 'newrelic_rpm'
-# gem 'peek'
+gem 'peek'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
@@ -141,31 +146,31 @@ end
 # request-log-analyzer
 
 # Database Gems
-# gem 'foreigner'
-# gem 'immigrant'
-# gem 'pg'
+gem 'foreigner'
+gem 'immigrant'
+gem 'pg'
 # gem 'rails3_pg_deferred_constraints'
-# gem 'database_cleaner'
-# gem "bullet", :group => "development"
-# gem "schema_plus"
-# gem "schema_validations"
-# gem "schema_associations"
-# gem 'attribute_normalizer'
+gem 'database_cleaner'
+gem "bullet", :group => "development"
+gem "schema_plus"
+gem "schema_validations"
+gem "schema_associations"
+gem 'attribute_normalizer'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deployment
 # http://mayerdan.com/programming/2013/08/04/thoughts-on-continuous-deployment/
 # https://github.com/capistrano/capistrano
 # capistrano_mailer
 # https://github.com/nadarei/mina
-#group :development do
-  #gem 'capistrano'
-  #gem 'capistrano-ext'
-#end
+# group :capistrano do
+#   gem 'capistrano'
+#   gem 'capistrano-ext'
+# end
 # CI & CD (Continuous Delivery book)
 # codeship.io
 # wercker.com
@@ -173,7 +178,7 @@ end
 # janky, hubot, jenkins?
 
 group :development do
-#  gem 'seed-fu', github: 'mbleigh/seed-fu'
+ gem 'seed-fu', github: 'mbleigh/seed-fu'
 end
 
 # Debugging
@@ -214,7 +219,7 @@ group :test do
 end
 
 # A/B Testing
-# gem 'split'
+gem 'split'
 
 group :metrics do
   gem 'metric_fu', require: false
@@ -228,19 +233,18 @@ group :development do
   gem 'quiet_assets'
 end
 
+
 gem 'turnout'
 
 # State Machine
-# gem 'state_machine'
+gem 'state_machine'
 
 # Public Activity
-# gem 'public_activity'
+gem 'public_activity'
 
 # File Uploads
-# gem 'carrierwave'
+gem 'carrierwave'
 
-# Recommendation Engines
-# https://www.ruby-toolbox.com/categories/Recommendation_Engines
 
 group :seo do
 #  gem 'sitemap_generator'
@@ -249,10 +253,10 @@ end
 #######################################################################
 #                               Search                                #
 #######################################################################
-# gem "ransack"
 # thinking-sphinx
 # Scopes
-# gem 'searchlogic'
+gem "ransack"
+# DEPRECATED # gem 'searchlogic'
 
 ###################
 #  Documentation  #
@@ -283,12 +287,12 @@ end
 group :metrics do
   gem 'brakeman', :require => false
 end
-# gem "recaptcha", :require => "recaptcha/rails"
+gem "recaptcha", :require => "recaptcha/rails"
 
 #####################
 #  Admin Interface  #
 #####################
-# gem 'activeadmin'
+gem 'activeadmin', github: 'gregbell/active_admin', branch: 'rails4'
 
 
 
@@ -310,14 +314,14 @@ end
 ###################################
 #  Following, activities, social  #
 ###################################
-# gem 'public_activity'
-# gem 'forem'
+gem 'public_activity'
+gem 'forem'
 # For social code look at social_stream
 ######################################
 #  Recommendation engines and other  #
 ######################################
-# recommendify
-# recommendable
+# gem 'recommendify'
+gem 'recommendable'
 # similus
 # Slope-One
 
