@@ -15,6 +15,7 @@
         },
         "test_environment": {
           "cucumber_environment": {"cucumber": []},
+          "console": ["cc"],
           "test_helper": {"test": ["rspec", "testrb"], "mini":["mini"]}
         }
       }

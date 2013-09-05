@@ -178,10 +178,12 @@ end
 # travis-ci
 # janky, hubot, jenkins?
 
-group :development do
- # gem 'seed-fu', github: 'mbleigh/seed-fu'
- gem 'guard-zeus-client'
-end
+# gem 'seed-fu', github: 'mbleigh/seed-fu'
+
+# For convenience you can use guard, however running manually in console is faster
+# group :development, :test do
+#  gem 'guard-zeus-client'
+# end
 
 # Debugging
 group :development, :test do
