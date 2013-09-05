@@ -1,4 +1,6 @@
 # [Style Guides](https://github.com/styleguide/)
+# Benchmarks
+`curl -fsSL https://gist.github.com/raw/6420807/benchmark.rb | BUNDLE_GROUPS=default,development,assets ruby`
 # TimeZones
 ## Person (User Model)
 `validates_inclusion_of :time_zone, in: ActiveSupport::TimeZone.zones_map(&:name)`
