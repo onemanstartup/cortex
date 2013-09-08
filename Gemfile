@@ -142,6 +142,7 @@ end
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller'
+  gem 'meta_request'
 end
 # gem 'dashing-rails'
 # request-log-analyzer
@@ -185,6 +186,11 @@ end
 #  gem 'guard-zeus-client'
 # end
 
+group :development do
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
+  gem 'rb-fsevent',       require: false
+end
 # Debugging
 group :development, :test do
   # gem 'xray-rails'
@@ -211,10 +217,10 @@ group :test do
   gem 'capybara-webkit' # for headless javascript tests
   gem 'turn', require: false
   gem 'm'
-  # gem "rspec-rails"
+  gem 'rr', require: false
 # Mocking
 # gem 'timecop'
-# Rspec-mocks || mocha || RR
+# || mocha || RR
   # Web Mocks
   # webmock ||  fakeweb - for fine-grained control & if remote server isn't available
   # vcr  - when record/replay is enough, for an easy life
@@ -223,6 +229,9 @@ group :test do
 # Parallel Testing
   # Spork + parallel_tests + zeus-parallel_tests
 # guard
+
+# Rspec related, but I don't wanna slow tests, so i choose minitest
+# gem "rspec-rails"
 end
 
 # A/B Testing
