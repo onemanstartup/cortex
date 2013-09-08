@@ -25,4 +25,7 @@ Cortex::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   config.assets.paths << "#{Rails.root}/vendor/assets/dev_js"
+
+  # Automatically inject JavaScript needed for LiveReload
+  config.middleware.insert_after(ActionDispatch::Static, Rack::LiveReload)
 end
