@@ -240,7 +240,6 @@ end
 group :metrics do
   gem 'metric_fu', require: false
   gem 'rubocop', require: false
-  gem 'cane', require: false
 end
 
 group :development do

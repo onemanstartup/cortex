@@ -307,7 +307,6 @@ DEPENDENCIES
   bower-rails!
   brakeman
   byebug
-  cane
   capybara
   capybara-webkit
   capybara_minitest_spec
