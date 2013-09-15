@@ -239,6 +239,15 @@ end
 
 group :metrics do
   gem 'metric_fu', require: false
+    # Cane
+    # Churn
+    # Flog
+    # Flay
+    # Reek
+    # Roodi
+    # Saikuro
+    # Rails Best Practices
+    # 1.9: SimpleCov and SimpleCov-Rcov-Text
   gem 'rubocop', require: false
 end
 
