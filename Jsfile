@@ -10,8 +10,13 @@ group :vendor, assets_path: "assets/dev_js" do
  js "html-inspector"
 end
 
+group :vendor, assets_path: "assets/css" do
+ js "normalize-css"
+end
+
+
 # Puts files under ./lib/assets/javascript/components
 # group :lib do
 # end
-# 
+#
 

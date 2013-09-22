@@ -21,4 +21,5 @@
 # Ignore bower files
 /vendor/assets/js/**/*
 /vendor/assets/dev_js
+/vendor/assets/**/*
 vendor/assets/js/bower.json
