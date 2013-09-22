@@ -24,5 +24,7 @@ class ActiveSupport::TestCase
   class << self
     alias :context :describe
   end
+
+  extend MiniTest::Spec::DSL
 end
 
