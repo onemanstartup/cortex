@@ -59,7 +59,7 @@ gem 'figaro'
 #############################
 #  Stylesheet related gems  #
 #############################
-# gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 4.0.0'
 # gem 'stylus'
 # gem 'compass-rails', :group => "assets"
 # gem 'bootstrap-sass', :group => "assets"
@@ -68,13 +68,13 @@ group :test do
   # gem 'deadweight', :require => 'deadweight/hijack/rails'
 end
 group :development do
-  # gem 'kss-rails'
+  gem 'kss-rails'
 end
 
 # Use Uglifier as compressor for JavaScript assets
 # gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
-# gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', '~> 4.0.0'
 
 # Can't add only in assets cause it adds rake files
 gem "bower-rails", github: '42dev/bower-rails'

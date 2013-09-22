@@ -86,6 +86,13 @@ GEM
     code_analyzer (0.3.2)
       sexp_processor
     coderay (1.0.9)
+    coffee-rails (4.0.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0.beta, < 5.0)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.3)
     colored (1.2)
     columnize (0.3.6)
     coolline (0.4.2)
@@ -104,6 +111,8 @@ GEM
     exception_notification (4.0.0)
       actionmailer (>= 3.0.4)
       activesupport (>= 3.0.4)
+    execjs (1.4.0)
+      multi_json (~> 1.0)
     fastercsv (1.5.5)
     fattr (2.2.1)
     ffi (1.9.0)
@@ -137,6 +146,10 @@ GEM
     io-console (0.3)
     json (1.8.0)
     json_pure (1.8.0)
+    kss (0.4.0)
+    kss-rails (1.0.2)
+      kss
+      rails (>= 3.0.0)
     listen (1.3.1)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -263,6 +276,10 @@ GEM
     ruby_parser (3.1.3)
       sexp_processor (~> 4.1)
     sass (3.2.10)
+    sass-rails (4.0.0)
+      railties (>= 4.0.0.beta, < 5.0)
+      sass (>= 3.1.10)
+      sprockets-rails (~> 2.0.0)
     sdoc (0.3.20)
       json (>= 1.1.3)
       rdoc (~> 3.10)
@@ -310,10 +327,12 @@ DEPENDENCIES
   capybara
   capybara-webkit
   capybara_minitest_spec
+  coffee-rails (~> 4.0.0)
   devise
   exception_notification
   figaro
   guard-livereload
+  kss-rails
   m
   meta_request
   metric_fu
@@ -328,5 +347,6 @@ DEPENDENCIES
   rb-fsevent
   rr
   rubocop
+  sass-rails (~> 4.0.0)
   sdoc
   turn
