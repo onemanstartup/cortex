@@ -69,6 +69,7 @@ group :test do
 end
 group :development do
   gem 'kss-rails'
+  gem 'autoprefixer-rails'
 end
 
 # Use Uglifier as compressor for JavaScript assets

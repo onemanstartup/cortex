@@ -36,6 +36,8 @@ GEM
     arrayfields (4.9.0)
     ast (1.1.0)
     atomic (1.1.12)
+    autoprefixer-rails (0.4.20130507)
+      execjs
     awesome_print (1.1.0)
     backports (3.3.3)
     bcrypt-ruby (3.1.1)
@@ -318,6 +320,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  autoprefixer-rails
   awesome_print
   better_errors
   binding_of_caller
