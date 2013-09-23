@@ -32,7 +32,7 @@ We :can password protect rss feed
 # Exception Notification
 `gem 'exception_notification'` => `http://smartinez87.github.io/exception_notification/`
 ignore default exceptions
-`
+```
 App::Application.config.middleware.use ExceptionNotification::Rack,
   :ignore_exceptions => ExceptionNotifier.ignored_exceptions,
   :ignore_crawlers => %w{Googlebot bingbot},
@@ -42,7 +42,7 @@ App::Application.config.middleware.use ExceptionNotification::Rack,
     :sender_address => %{"notifier" <notifier@example.com>},
     :exception_recipients => %w{exceptions@example.com}
   }
-`
+```
 
 
 # Js
