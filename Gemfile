@@ -80,7 +80,7 @@ gem 'coffee-rails', '~> 4.0.0'
 # Can't add only in assets cause it adds rake files
 gem "bower-rails", github: '42dev/bower-rails'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+gem 'therubyracer', platforms: :ruby
 
 # gem 'wiselinks'
 # gem 'mousetrap-rails'
