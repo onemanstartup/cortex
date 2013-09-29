@@ -64,6 +64,7 @@ gem 'sass-rails', '~> 4.0.0'
 # gem 'compass-rails', :group => "assets"
 # gem 'bootstrap-sass', :group => "assets"
 # gem 'bourbon'
+# gem 'emblem-rails'
 group :test do
   # gem 'deadweight', :require => 'deadweight/hijack/rails'
 end
