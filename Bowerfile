@@ -2,17 +2,18 @@ assets_path "assets/javascript"
 
 # Puts files under ./vendor/assets/js/components
 group :vendor, :assets_path => "assets/js"  do
-  js "jquery"            # Assummes it's latests
+  asset "jquery"            # Assummes it's latests
+  asset "sugar"
 end
 
 # Puts files under ./vendor/assets/js/components
 group :vendor, assets_path: "assets/dev_js" do
- js "html-inspector"
+ asset "html-inspector"
 end
 
 group :vendor, assets_path: "assets/stylesheets" do
- js "normalize-css"
- js "sass-bootstrap"
+ asset "normalize-css"
+ asset "sass-bootstrap"
 end
 
 
