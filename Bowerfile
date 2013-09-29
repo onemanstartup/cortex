@@ -4,6 +4,79 @@ assets_path "assets/javascript"
 group :vendor, :assets_path => "assets/js"  do
   asset "jquery"            # Assummes it's latests
   asset "sugar"
+  # Uploads for your important files
+  # asset "jquery-file-upload"
+  # Tour for your complex interface (alt: bootstrap-tour, hopscotch)
+  # asset 'intro.js'
+  # Know your hipstory
+  # asset 'history.js'
+  # Your amazon like menu
+  # asset 'jQuery-menu-aim'
+  # Modern Masonry
+  # asset 'masonry'
+  # Wannabe coockie
+  # asset 'jquery-cookie'
+  # Shortcuts
+  # asset 'mousetrap'
+  # Form validation
+  # asset 'parsleyjs'
+  # Form persistency
+  # asset 'garlicjs'
+  #
+  # Lazy Load images (alt: )
+  # asset 'unveil'
+  #
+  # Typography
+  # asset 'fittext'
+  # asset 'FlowTypeJS'
+  #
+  # Responsive video
+  # asset 'FitVids'
+  #
+  # favicon (piecon, favico.js)
+  # asset 'tinycon'
+  #
+  # List filter
+  # asset 'listjs'
+  #
+  # Picker of a date & time
+  # asset 'pickadate'
+  #
+  # Alerts, notifications (alt: 'noty', 'messenger', 'toastr')
+  # asset 'alertify.js'
+  #
+  # Waypoints, well it's, emm. Just look demo. (alt: scrollpath, scrollorama, sly)
+  # asset 'jquery-waypoints'
+  #
+  # Placeholder (Die ie 9)
+  # asset 'jquery-placeholder'
+  #
+  # Timestamps (some time ago)
+  # asset 'jquery-timeago'
+  #
+  # Boostrap-related
+  # --- to be continued
+  #
+  # Social buttons (alt: SocialCount)
+  # asset 'Socialite'
+  #
+  # Experiment
+  # asset 'react'
+  #
+  # Media query
+  # enquire.js
+  #
+  # Strech images on background and item
+  # jquery-backstretch
+  #
+  # Sidepane (alt: responsive-nav.js, sidr)
+  # asset 'snapjs'
+  #
+  # Working with uri
+  # uri.js
+  #
+  # Storage (alt: lawnchair)
+  # store.js
 end
 
 # Puts files under ./vendor/assets/js/components
