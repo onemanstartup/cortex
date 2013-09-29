@@ -37,5 +37,6 @@ module Cortex
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :ru
     config.assets.paths << "#{Rails.root}/vendor/assets/js"
+    config.assets.paths << "#{Rails.root}/vendor/assets/stylesheets/bower_components/sass-bootstrap/lib"
   end
 end

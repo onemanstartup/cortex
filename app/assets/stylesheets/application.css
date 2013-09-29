@@ -10,7 +10,9 @@
  *
  *= require_self
  *= require_tree .
+ *= require bower_components/normalize-css/normalize.css
  */
+
 
 body {
   margin: 20px

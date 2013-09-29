@@ -10,8 +10,9 @@ group :vendor, assets_path: "assets/dev_js" do
  js "html-inspector"
 end
 
-group :vendor, assets_path: "assets/css" do
+group :vendor, assets_path: "assets/stylesheets" do
  js "normalize-css"
+ js "sass-bootstrap"
 end
 
 
