@@ -98,6 +98,8 @@ GEM
     colored (1.2)
     columnize (0.3.6)
     coolline (0.4.2)
+    csso-rails (0.3.2)
+      execjs (>= 1)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     devise (3.1.0)
@@ -338,6 +340,7 @@ DEPENDENCIES
   capybara-webkit
   capybara_minitest_spec
   coffee-rails (~> 4.0.0)
+  csso-rails
   devise
   exception_notification
   figaro

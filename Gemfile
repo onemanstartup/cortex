@@ -60,6 +60,7 @@ gem 'figaro'
 #  Stylesheet related gems  #
 #############################
 gem 'sass-rails', '~> 4.0.0'
+gem 'csso-rails'
 # gem 'stylus'
 # gem 'compass-rails', :group => "assets"
 # gem 'bootstrap-sass', :group => "assets"
